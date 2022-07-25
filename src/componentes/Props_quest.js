@@ -8,7 +8,7 @@ export default function Props_quest(props) {
         <div className="box_quest">
             <p>{props.questionOpen}</p>
             <img src={rotate} onClick={() => setOpen2(!open2)} />
-        </div> : <Props_response response ={props.response} pergunta={props.questionOpen} question ={props.question}/>
+        </div> : <Props_response response={props.response} pergunta={props.questionOpen} question={props.question} />
 
     )
 }

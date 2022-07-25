@@ -19,13 +19,12 @@
 }
 
 .container_pag2 {
-   width: 100%;
+    width: 100%;
     height: 100vh;
     background: #FB6B6B;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 .container_pag2 img {
@@ -82,6 +81,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 58px;
+    margin-top: 42px;
 }
 
 .box_ask ion-icon {
@@ -121,7 +121,9 @@
 .erro {
     width: 85.17px;
     height: 37.17px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #FF3030;
     border-radius: 5px;
 }
@@ -129,17 +131,35 @@
 .quase {
     width: 85.17px;
     height: 37.17px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #FF922E;
     border-radius: 5px;
+}
+
+.quase>div {
+    font-family: 'Recursive';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
 }
 
 .acerto {
     width: 85.17px;
     height: 37.17px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #2FBE34;
     border-radius: 5px;
+    text-align: center;
 }
 
 .response_box {
@@ -162,10 +182,10 @@
     color: #FFFFFF;
 }
 
-.estado_errado p{
+.estado_errado p {
     text-decoration-line: line-through;
 
-color: #FF3030;
+    color: #FF3030;
 
 }
 
@@ -173,10 +193,10 @@ color: #FF3030;
     color: #FF3030;
 }
 
-.estado_quase p{
+.estado_quase p {
     text-decoration-line: line-through;
 
-color: #FF922E;
+    color: #FF922E;
 
 }
 
@@ -184,10 +204,10 @@ color: #FF922E;
     color: #FF922E;
 }
 
-.estado_zap p{
+.estado_zap p {
     text-decoration-line: line-through;
 
-color: #2FBE34;
+    color: #2FBE34;
 
 }
 

@@ -6,9 +6,9 @@ export default function Zap() {
 
     return (
         <>
-        <div className="ask_container">
-            <Deck />
-        </div>
+            <div className="ask_container">
+                <Deck />
+            </div>
         </>
     )
 }
