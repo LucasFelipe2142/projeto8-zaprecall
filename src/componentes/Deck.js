@@ -1,5 +1,5 @@
-import React from "react";
-import Props_quest from "./Props_quest";
+import Props_ask from "./Props_ask";
+
 const questionsaux = [
     { ask: "Pergunta ", question: "O que é JSX?", response: "Uma extensão de linguagem do JavaScript" },
     { ask: "Pergunta ", question: "O React é __", response: "uma biblioteca JavaScript para construção de interfaces" },
@@ -12,27 +12,13 @@ const questionsaux = [
 ];
 
 let questionstest = questionsaux.sort(() => Math.random() - 0.5);
-    let questions = questionstest.slice(4);
+let questions = questionstest.slice(4);
 
-    export default function Render(){
-        const [open, setOpen] = React.useState(true);
+export default function Render() {
 
-        function Props_ask(props) {
-            return (open ?
-                <>
-                    <div className="box_ask" onClick={() => setOpen(!open)}>
-                        <div>
-                            <p>{props.question}</p>
-                            <ion-icon name="play-outline"></ion-icon>
-                        </div>
-                    </div>
-                </> : <Props_quest questionOpen={props.questionOpen} response ={props.response} />
-            )
-        }
-
-        return(
-            <div>
-                {questions.map((ask, index) => (<Props_ask key={index} index={index} question={ask.ask + (index + 1)} questionOpen={ask.question} response={ask.response} />))}
-            </div>
-        )
-    }
+    return (
+        <div>
+            {questions.map((ask, index) => (<Props_ask key={index} index={index} question={ask.ask + (index + 1)} questionOpen={ask.question} response={ask.response} />))}
+        </div>
+    )
+}
