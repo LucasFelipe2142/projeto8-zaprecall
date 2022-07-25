@@ -11,6 +11,6 @@ export default function Props_ask(props) {
                 <ion-icon name="play-outline"></ion-icon>
 
             </div>
-        </> : <div className="quest_container"><Props_quest questionOpen={props.questionOpen} response={props.response} /></div>
+        </> : <div className="quest_container"><Props_quest questionOpen={props.questionOpen} response={props.response} question = {props.question} /></div>
     )
 }

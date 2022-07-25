@@ -19,7 +19,7 @@
 }
 
 .container_pag2 {
-    max-width: 375px;
+   width: 100%;
     height: 100vh;
     background: #FB6B6B;
     display: flex;
@@ -162,3 +162,35 @@
     color: #FFFFFF;
 }
 
+.estado_errado p{
+    text-decoration-line: line-through;
+
+color: #FF3030;
+
+}
+
+.estado_errado ion-icon {
+    color: #FF3030;
+}
+
+.estado_quase p{
+    text-decoration-line: line-through;
+
+color: #FF922E;
+
+}
+
+.estado_quase ion-icon {
+    color: #FF922E;
+}
+
+.estado_zap p{
+    text-decoration-line: line-through;
+
+color: #2FBE34;
+
+}
+
+.estado_zap ion-icon {
+    color: #2FBE34;
+}

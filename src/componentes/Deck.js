@@ -1,4 +1,5 @@
 import Props_ask from "./Props_ask";
+import Footer from "./Footer"
 
 const questionsaux = [
     { ask: "Pergunta ", question: "O que é JSX?", response: "Uma extensão de linguagem do JavaScript" },
@@ -17,8 +18,11 @@ let questions = questionstest.slice(4);
 export default function Render() {
 
     return (
-        <div>
-            {questions.map((ask, index) => (<Props_ask key={index} index={index} question={ask.ask + (index + 1)} questionOpen={ask.question} response={ask.response} />))}
-        </div>
+        <>
+            <div>
+                {questions.map((ask, index) => (<Props_ask key={index} index={index} question={ask.ask + (index + 1)} questionOpen={ask.question} response={ask.response} />))}
+            </div>
+            <Footer contador="0" />
+        </>
     )
 }
