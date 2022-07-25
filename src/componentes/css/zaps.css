@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.box_ask>div {
+    width: 300px;
+    height: 65px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container_pag2 {
+    max-width: 375px;
+    height: 100vh;
+    background: #FB6B6B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_pag2 img {
+    width: 52px;
+    height: 60px;
+
+}
+
+.box_ask p {
+    margin-left: 15px;
+    width: 87px;
+    height: 19px;
+
+    font-family: 'Recursive', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #333333;
+}
+
+.box_quest p {
+    margin-top: 18px;
+    margin-left: 15px;
+    font-family: 'Recursive', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #333333;
+}
+
+.namePag2 {
+    margin-left: 20px;
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.012em;
+
+    color: #FFFFFF;
+
+    transform: rotate(0.58deg);
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 58px;
+}
+
+.box_ask>div ion-icon {
+    font-size: 30px;
+    color: #333333;
+    margin-right: 15px;
+}
+
+.box_ask ion-icon:hover {
+    cursor: pointer;
+}
+
+.box_quest img {
+    height: 20px;
+    width: 30px;
+    margin-left: 255px;
+    margin-top: 65px
+}
+
+.box_quest img:hover {
+    cursor: pointer;
+}
+
+#close {
+    display: none;
+}
+
+.box_quest {
+    width: 299px;
+    min-height: 131px;
+
+    background: #FFFFD5;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.erro {
+    width: 85.17px;
+    height: 37.17px;
+
+    background: #FF3030;
+    border-radius: 5px;
+}
+
+.quase {
+    width: 85.17px;
+    height: 37.17px;
+
+    background: #FF922E;
+    border-radius: 5px;
+}
+
+.acerto {
+    width: 85.17px;
+    height: 37.17px;
+
+    background: #2FBE34;
+    border-radius: 5px;
+}
+
+.response_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 18px;
+}
+
+.acerto_erro {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    font-family: 'Recursive';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
